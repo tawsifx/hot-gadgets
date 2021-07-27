@@ -1,0 +1,34 @@
+body{
+    font-family: "Poppins",sans-serif!important;
+}
+.carousel-item{
+    padding: 20px 40px;
+}
+.carousel  
+ {
+     
+     border-radius: 10px;
+     margin:40px 10px;
+}
+.buynowbtn{
+     background-color: black;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     padding: 9px 25px;
+     cursor: pointer;
+}
+.carousel-control-prev{
+    height: 100px;
+    margin-top: 135px;
+}
+.phonetitle{
+    padding:10px 20px
+}
+.see-all{
+    text-decoration: none;
+    background-color: orange;
+    padding: 7px;
+    border-radius: 9px;
+    color: white;
+}
