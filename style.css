@@ -46,6 +46,14 @@ body{
 .bgcontainer{
     background-image:url("images/bg-1.png");
     background-repeat: no-repeat;
-    
-    
+}
+.underline{
+    background-color: orange;
+    width:110px;
+    height:5px;
+    border-radius: 20px;
+}
+.catborder{
+    border: 2px solid grey;
+    padding: 10px;
 }
