@@ -9,6 +9,7 @@ body{
      
      border-radius: 10px;
      margin:40px 10px;
+     
 }
 .buynowbtn{
      background-color: black;
@@ -17,13 +18,17 @@ body{
      border-radius: 8px;
      padding: 9px 25px;
      cursor: pointer;
+     margin-top: 5px;
 }
 .carousel-control-prev{
     height: 100px;
     margin-top: 135px;
 }
 .phonetitle{
-    padding:10px 20px
+    padding:10px 20px;
+    margin: 20px 5px;
+    background-image: url("images/bg-2.png");
+    background-repeat: no-repeat;
 }
 .see-all{
     text-decoration: none;
@@ -31,4 +36,16 @@ body{
     padding: 7px;
     border-radius: 9px;
     color: white;
+}
+
+.laptoptitle{
+    padding:10px 20px;
+    
+    margin: 30px 5px;
+}
+.bgcontainer{
+    background-image:url("images/bg-1.png");
+    background-repeat: no-repeat;
+    
+    
 }
