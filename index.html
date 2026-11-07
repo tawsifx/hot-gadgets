@@ -15,6 +15,59 @@
 
 
 <body>
+  <!-- Loading Skeleton Screen -->
+  <div id="skeleton-overlay" class="skeleton-wrapper bg-white" aria-hidden="false" role="status" aria-label="Loading hot gadgets">
+    <div class="container py-4">
+      <div class="d-flex justify-content-between align-items-center mb-5 placeholder-glow">
+        <span class="placeholder col-2" style="height: 48px; border-radius: 8px;"></span>
+        <div class="d-flex gap-3 col-4 justify-content-end">
+          <span class="placeholder col-3" style="height: 24px; border-radius: 4px;"></span>
+          <span class="placeholder col-3" style="height: 24px; border-radius: 4px;"></span>
+          <span class="placeholder col-3" style="height: 24px; border-radius: 4px;"></span>
+        </div>
+      </div>
+      <div class="p-5 mb-5 rounded-4 bg-light placeholder-glow">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <span class="placeholder col-8 mb-3" style="height: 36px; border-radius: 4px;"></span>
+            <span class="placeholder col-11 mb-2" style="height: 16px; border-radius: 4px;"></span>
+            <span class="placeholder col-9 mb-4" style="height: 16px; border-radius: 4px;"></span>
+            <span class="placeholder col-4" style="height: 42px; border-radius: 8px;"></span>
+          </div>
+          <div class="col-md-6 text-center">
+            <span class="placeholder col-8" style="height: 220px; border-radius: 12px;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 placeholder-glow">
+        <div class="col-md-4">
+          <div class="card p-3 border-0 shadow-sm">
+            <span class="placeholder col-12 mb-3" style="height: 180px; border-radius: 8px;"></span>
+            <span class="placeholder col-7 mb-2" style="height: 20px; border-radius: 4px;"></span>
+            <span class="placeholder col-10 mb-3" style="height: 14px; border-radius: 4px;"></span>
+            <span class="placeholder col-5" style="height: 36px; border-radius: 6px;"></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 border-0 shadow-sm">
+            <span class="placeholder col-12 mb-3" style="height: 180px; border-radius: 8px;"></span>
+            <span class="placeholder col-7 mb-2" style="height: 20px; border-radius: 4px;"></span>
+            <span class="placeholder col-10 mb-3" style="height: 14px; border-radius: 4px;"></span>
+            <span class="placeholder col-5" style="height: 36px; border-radius: 6px;"></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 border-0 shadow-sm">
+            <span class="placeholder col-12 mb-3" style="height: 180px; border-radius: 8px;"></span>
+            <span class="placeholder col-7 mb-2" style="height: 20px; border-radius: 4px;"></span>
+            <span class="placeholder col-10 mb-3" style="height: 14px; border-radius: 4px;"></span>
+            <span class="placeholder col-5" style="height: 36px; border-radius: 6px;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -292,6 +345,24 @@
     
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Dismiss loading skeleton on window load
+        window.addEventListener('load', function() {
+            var skeleton = document.getElementById('skeleton-overlay');
+            if (skeleton) {
+                skeleton.classList.add('loaded');
+                skeleton.setAttribute('aria-hidden', 'true');
+                setTimeout(function() {
+                    skeleton.style.display = 'none';
+                }, 400);
+            }
+        });
+    </script>
+    <noscript>
+        <style>
+            #skeleton-overlay { display: none !important; }
+        </style>
+    </noscript>
 </body>
 
 </html>
