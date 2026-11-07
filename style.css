@@ -134,3 +134,28 @@ footer.footer {
     border-top: 1px solid #eeeeee;
     color: #777777;
 }
+
+
+/* Loading Skeleton Architecture */
+.skeleton-wrapper {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    overflow-y: auto;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.skeleton-wrapper.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .placeholder-glow .placeholder {
+        animation: none;
+        opacity: 0.2;
+    }
+}
